@@ -19,7 +19,7 @@ const Pagination = () => {
       setEmployees(response.data);
       setTotalPages(Math.ceil(response.data.length / 10));
     } catch (error) {
-      alert("failed to fetch data");
+      alert("Failed to fetch data");
       console.error("Error fetching data:", error);
     }
   };
